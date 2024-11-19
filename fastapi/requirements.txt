@@ -1,0 +1,12 @@
+aioodbc==0.5.0
+bcrypt==4.0.1
+fastapi==0.110.3
+loguru==0.7.2
+python-multipart==0.0.9
+nest-asyncio==1.6.0
+passlib==1.7.4
+pydantic==2.7.1
+python-jose==3.3.0
+shapely==2.0.4
+SQLAlchemy==2.0.3
+uvicorn==0.29.0

@@ -1,0 +1,31 @@
+http:
+  routers:
+    react_router:
+      rule: Host(`react.docker.localhost`)
+      service: react_service
+
+    fastapi_router:
+      rule: Host(`fastapi.docker.localhost`)
+      service: fastapi_service
+
+  middlewares:
+    rate-limit-middleware:
+      rateLimit:
+        average: 8
+        period: 10s
+
+    basic-login-pass-middleware:
+      basicAuth:
+        users:
+          - "support:$apr1$nw9DaJFI$8e81UjaO8NY0YrWXO0Xtd."
+
+  services:
+    react_service:
+      loadBalancer:
+        servers:
+          - url: http://react:6000
+
+    fastapi_service:
+      loadBalancer:
+        servers:
+          - url: http://fastapi:5000

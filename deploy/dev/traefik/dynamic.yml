@@ -1,0 +1,26 @@
+http:
+  routers:
+    react_router:
+      rule: Host(`react.docker.localhost`)
+      service: react_service
+
+    fastapi_router:
+      rule: PathPrefix(`/`)
+      service: fastapi_service
+
+  middlewares:
+    rate-limit-middleware:
+      rateLimit:
+        average: 8
+        period: 10s
+
+  services:
+    react_service:
+      loadBalancer:
+        servers:
+          - url: http://react:6000
+
+    fastapi_service:
+      loadBalancer:
+        servers:
+          - url: http://fastapi:5000

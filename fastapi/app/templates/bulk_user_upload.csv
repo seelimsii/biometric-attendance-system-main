@@ -1,0 +1,8 @@
+EmployeeName,EmployeeCode,StringCode,NumericCode,Gender,CompanyId,DepartmentId,CategoryId,EmployeeCodeInDevice,EmployementType,Status,Email
+Ashish,2002111001,-1,2002111001,--,-1,-1,-1,--,--,--,ashish@dseu.ac.in
+Shyaam,2002111002,-1,2002111002,--,-1,-1,-1,--,--,--,shayam@dseu.ac.in
+Shivam,2002111003,-1,2002111003,--,-1,-1,-1,--,--,--,shivam@dseu.ac.in
+Archit,2002111004,-1,2002111004,--,-1,-1,-1,--,--,--,archit@dseu.ac.in
+Rahul,2002111005,-1,2002111005,--,-1,-1,-1,--,--,--,rahul@dseu.ac.in
+Ankit,2002111006,-1,2002111006,--,-1,-1,-1,--,--,--,ankit@dseu.ac.in
+Aamir,2002111007,-1,2002111007,--,-1,-1,-1,--,--,--,aamir@dseu.ac.in
