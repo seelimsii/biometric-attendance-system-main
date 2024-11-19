@@ -1,0 +1,51 @@
+.leave-form-container {
+    padding: 2% 5%;
+}
+
+.leave-form-heading {
+    font-size: 35px;
+    color: rgba(0, 114, 188, 1);
+    text-align: left;
+}
+
+.leave-form-input {
+    width: 100%;
+    border: none;
+    background: #0072BC1C;
+    border-radius: 16px;
+    color: rgba(0, 114, 188, 1);
+
+    font-size: 20px;
+    padding: 12px 10px;
+    outline: none;
+}
+
+.leave-form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leave-form-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 10px 16px 10px;
+    width: 23%;
+    /* overflow: hidden; */
+}
+
+.leave-form-container label {
+    font-size: 18px;
+    color: rgba(0, 114, 188, 1);
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.leave-form-desc {
+    width: 98.5%;
+}
+.leave-form-input-container button{
+  
+    font-size: 20px;
+}
+

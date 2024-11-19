@@ -1,0 +1,30 @@
+.pa-card{
+    width: 200px;
+    padding: 25px 40px;
+    margin: 10px 15px;
+}
+.pa-card-div{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.pa-text{
+    font-weight: 700;
+}
+.pa-number{
+    font-size: 50px;
+    font-weight: 700;
+}
+.present{
+    color:rgba(0, 114, 188, 1) ;
+}
+.absent{
+    color: rgba(247, 146, 25, 1);
+}
+.vertical-line{
+    height: 65px;
+    width: 1px;
+    border-left: 1px solid rgba(0, 0, 0, 0.208);
+}

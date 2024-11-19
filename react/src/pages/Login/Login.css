@@ -1,0 +1,73 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+    background: url('../../assets/DSEU-building.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /* Add this line */
+}
+
+.login-card h2 {
+    color: #fff;    
+}
+
+.login-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    /* Adjust width as needed */
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    background-color: hsla(0, 1%, 72%, 0.6);
+    backdrop-filter: blur(8px);
+    position: relative;
+    
+}
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Adjust the opacity */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: -1;
+}
+
+.login-input {
+    margin-top: 10px;
+    padding-left: 20px;
+    /* margin-bottom: 10px; */
+    height: 40px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    font-size: 1em;
+
+}
+
+.login-input::placeholder {
+    color: #fff;
+}
+
+.login-button {
+    background-color: #fff;
+    color: black;
+    margin-top: 20px;
+}
+.login-card i{
+
+    font-size: 65px;
+    color: #fff;
+}

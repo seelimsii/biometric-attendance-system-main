@@ -1,0 +1,124 @@
+.otp-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.otp {
+    width: 500px;
+    height: 620px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    box-shadow: 5px 4px 14px 0px rgba(0, 0, 0, 0.9);
+    margin-top: 4.2%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 9px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.otp #i1 {
+    margin-top: 5%;
+    width: 80px;
+}
+
+.otp h3 {
+    font-family: "Milford Black";
+    color: #0072BC;
+    font-weight: 900;
+    font-size: 24.35px;
+    text-align: center;
+    line-height: 29.26px;
+    padding-top: 15px;
+}
+
+.otp p {
+    font-family: "Milford Condensed";
+    font-weight: 700;
+    font-size: 24.35px;
+    text-align: center;
+    color: #F79219;
+    line-height: 0.3px;
+    margin-top: 0.1%;
+    padding-top: 18px;
+}
+
+.text {
+    padding-top: 15px;
+    font-family: "Open Sans";
+    color: #0072BC;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.text1 {
+    padding-top: 12px;
+    font-family: "Open Sans";
+    color: #6FAFD8;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.text1 u:hover {
+    color: #F79219;
+    cursor: pointer;
+}
+
+.text1 b {
+    color: #0072BC;
+    font-size: 19px;
+    padding-left: 9px;
+}
+
+.text1 b:hover {
+    color: #F79219;
+    cursor: pointer;
+}
+
+.inputs {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputs .opt-container {
+    width: 50px;
+    height: 50px;
+}
+
+.inputs span {
+    row-gap: 20px;
+}
+
+.submit {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 249px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 14px;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: #0072BC;
+    color: whitesmoke;
+    margin-top: 10px;
+    margin-left: 24%;
+}
+
+.otp1 {
+    padding: 20px;
+}

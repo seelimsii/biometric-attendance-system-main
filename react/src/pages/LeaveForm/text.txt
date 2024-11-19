@@ -1,0 +1,85 @@
+import React from 'react'
+import Navbar from '../../Components/Navbar/Navbar';
+// import './LeaveForm.css';
+const LeaveForm = () => {
+    var today = new Date().toISOString().split('T')[0];
+    function saveFormData() {
+        var formData = {
+            "name": document.getElementById("name").value,
+            "id": document.getElementById("id").value,
+            "designation": document.getElementById("designation").value,
+            "from_date": document.getElementById("from_date").value,
+            "to_date": document.getElementById("to_date").value,
+            "leave_type": document.getElementById("leave_type").value,
+            "description": document.getElementById("description").value
+        };
+
+        // Convert formData to JSON string
+        var jsonData = JSON.stringify(formData);
+        console.log(jsonData);
+    }
+
+    const person={
+        "name":"Pranchi",
+        "ID":"EMP12574804632",
+        "Designation":"Associate Professor"
+    }
+    return (
+        <div>
+            <div>
+                <Navbar/>
+            </div>
+            <div className='card leave-form-container'>
+                <h2 className='leave-form-heading'>Leave Application Form</h2>
+                <form action='' onSubmit={saveFormData} method='POST'>
+                    <div className="leave-form-row">
+                    <div className='leave-form-input-container'>
+                        <label >Name</label>
+                        <input className='leave-form-input' type="text" id="name" name="name" value={person.name} readOnly disabled />
+                    </div>
+                    <div className='leave-form-input-container'>
+                        <label >Employee ID</label>
+                        <input className='leave-form-input' type="text" id="id" name="id" value={person.ID} readOnly disabled />
+                    </div>
+                    <div className='leave-form-input-container'>
+                        <label >Designation</label>
+                        <input className='leave-form-input'  type="text" id="designation" name="designation" value={person.Designation} readOnly disabled />
+                    </div>
+                    </div>
+                    <div className="leave-form-row">
+            
+                    <div className='leave-form-input-container'>
+                        <label >From Date</label>
+                        <input className='leave-form-input'  type="date" id="from_date" name="from_date" required min={today} />
+                    </div>
+                    <div className='leave-form-input-container'>
+                        <label >To Date</label>
+                        <input className='leave-form-input'  type="date" id="to_date" name="to_date" required min={today} />
+                    </div>
+            
+            
+                    <div className='leave-form-input-container'>
+                        <label >Leave Type</label>
+                        <select className='leave-form-input'  id="leave_type" name="leave_type" required>
+                            <option value="">Select Leave Type</option>
+                            <option value="Sick Leave">Sick Leave</option>
+                            <option value="Casual Leave">Casual Leave</option>
+                            <option value="Paid Leave">Paid Leave</option>
+                            <option value="Maternity/Paternity Leave">Maternity/Paternity Leave</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div className='leave-form-input-container leave-form-desc'>
+                        <label >Description</label>
+                        <textarea className='leave-form-input' id="description" name="description" rows={5} required></textarea>
+                    </div>
+                    <div className='leave-form-input-container' >
+                        <button type="submit">Apply</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    )
+}   
+
+export default LeaveForm;

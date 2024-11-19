@@ -1,0 +1,178 @@
+.leave-container {
+    width: 85vw;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+.leave-managment-heading{
+   
+    font-size: 20px;
+    margin: 10px 0;
+    
+}
+.leave-managment{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.leave-profile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.leave-profile-image img {
+    margin: 15px 0;
+    width: 170px;
+    border-radius: 50%;
+}
+
+.leave-profile-details div {
+    text-align: start;
+}
+
+.leave-take-section {
+    padding: 10px;
+
+}
+.leave-take-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 16px;
+}
+.accordian-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6px;
+    
+}
+
+.leave-take-cards {
+    height: 48vh;
+    overflow: scroll;
+
+}
+
+.leave-take-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.leave-take-card {
+    margin: 8px 16px;
+    padding: 20px 30px;
+    
+}
+
+.leave-type {
+    margin: 0;
+
+    text-align: start;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(247, 146, 25, 1);
+}
+
+.leave-status {
+    margin: 0;
+    padding: 0 5px;
+    border-radius: 6px;
+    justify-self: end;
+    width: max-content;
+    font-weight: 500;
+    
+}
+.leave-status-Accepted{
+    color: rgba(119, 194, 113, 1);
+    background-color: rgba(223, 240, 221, 1);
+}
+.leave-status-Rejected{
+    color: rgba(237, 91, 89, 1);
+    background-color: rgba(253, 231, 230, 1);
+}
+.leave-status-Pending{
+color: rgba(255, 184, 0, 1);
+background-color: rgb(255, 243, 212);
+
+}
+
+.leave-date {
+    margin: 0;
+    text-align: start;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba(0, 114, 188, 1);
+}
+
+.accordian-header i {
+    text-align: end;
+    color: rgba(0, 114, 188, 1);
+    
+
+}
+.month-holidays{
+    padding: 10px;
+    height: 50vh;
+    margin-bottom: 15px;
+}
+.holiday-month-selector{
+    display: flex;
+    justify-self: flex-start;
+    border: none;
+    background: #0072BC1C;
+    border-radius: 16px;
+    color: rgba(0, 114, 188, 1);
+
+    font-size: 20px;
+    padding: 8px 10px;
+    outline: none;
+    margin: 8px 16px;
+}
+.holiday-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    margin: 8px 16px;
+    margin-top: 20px;
+}
+.leave-record-container{
+    /* height: 33vh; */
+    padding: 10px;
+}
+.leave-record-cards{
+    
+    margin: 8px 16px;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.leave-record-card{
+    padding: 8px;
+}
+.leave-record-no{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(0, 114, 188, 1);
+
+}
+
+@media screen and (max-width: 800px) {
+    .leave-container {
+        width: 100vw;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .leave-record-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 500px) {
+.holiday-list{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+
